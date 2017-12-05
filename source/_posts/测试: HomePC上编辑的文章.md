@@ -1,5 +1,8 @@
 ---
 title: 测试:HomePC上编辑的文章
+tags:
+  - Testing
+categories: 分类
 ---
 Hi all, 这是一篇在HomePC上编辑的文章, 只是做为测试使用.
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
