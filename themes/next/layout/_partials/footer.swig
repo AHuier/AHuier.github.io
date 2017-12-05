@@ -21,6 +21,7 @@
   {% endif %}
 </div>
 
+<!-- <xukh 2017.12.05 start: hide footer.powered tag>
 {% if theme.footer.powered %}
   <div class="powered-by">{#
   #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a>') }}{#
@@ -39,6 +40,7 @@
   #}</a>{% if theme.footer.theme.version %} v{{ theme.version }}{% endif %}{#
 #}</div>
 {% endif %}
+<xukh 2017.12.05 end: hide footer.powered tag> -->
 
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#

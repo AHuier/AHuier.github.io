@@ -334,6 +334,22 @@
     {### END POST BODY ###}
     {#####################}
 
+    {#### <xukh 2017.12.05 start: 文章末尾添加“本文结束”标记> ###}
+    <div>
+      {% if not is_index %}
+        {% include 'passage-end-tag.swig' %}
+      {% endif %}
+    </div>
+    {#### <xukh 2017.12.05 end: 文章末尾添加“本文结束”标记> ###}
+
+    {#### <xukh 2017.12.05 start: 文章末尾添加版权信息> ###}
+    <div>
+      {% if not is_index %}
+        {% include 'my-copyright.swig' %}
+      {% endif %}
+    </div>
+    {#### <xukh 2017.12.05 end: 文章末尾添加版权信息> ###}
+
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
         {% include 'wechat-subscriber.swig' %}
@@ -356,7 +372,7 @@
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tag"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}

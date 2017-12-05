@@ -2,13 +2,15 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+#<xukh 2017.12.05 start: add site name>
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: AHuier
+subtitle: 
+description: 如果我不在写代码，你就 @me
+author: AHuier
+language: zh-Hans
 timezone:
+#<xukh 2017.12.05 end: add site name>
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -81,4 +83,9 @@ deploy:
   repo: git@github.com:AHuier/AHuier.github.io.git
   branch: master
   message: '站点更新:{{now("YYYY-MM-DD HH:mm:ss")}}'
-  
+
+#<xukh 2017.12.05 start: add rss plugins>
+# Extensions
+## Plugins: http://hexo.io/plugins/
+plugins: hexo-generate-feed
+#<xukh 2017.12.05 end: add rss plugins>
