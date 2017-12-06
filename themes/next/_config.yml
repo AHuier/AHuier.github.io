@@ -214,11 +214,13 @@ save_scroll: false
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
 
+#<xukh 2017.12.06 start: 设置首页博文是预览状态>
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 200
+#<xukh 2017.12.06 end: 设置首页博文是预览状态>
 
 # Post meta display settings
 post_meta:
